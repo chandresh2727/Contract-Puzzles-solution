@@ -14,6 +14,8 @@ describe('Game2', function () {
 
     // press all the right switches to win this stage
     // assert(await game.win(),'You won this match');
+    
+    // This is used to pass the value for the switchOn function
     await game.switchOn(20);
     await game.switchOn(47);
     await game.switchOn(212);

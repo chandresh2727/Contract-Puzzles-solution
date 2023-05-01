@@ -8,6 +8,7 @@ describe('Game3', function () {
     return { game };
   }
 
+  //This is an function for an update an value or added value
   const getSignerAddressSetBalance = async (game, index, value) => {
     // Hardhat will create 10 accounts for you by default
     // you can get one of this accounts with ethers.provider.getSigner
@@ -16,6 +17,8 @@ describe('Game3', function () {
 
     // you can get that signer's address via .getAddress()
     // this variable is NOT used for Contract 3, just here as an example
+
+    //This is used to get the address
     const address = await signer.getAddress();
     await game.connect(signer).buy({ value: `${value}` });
     return {address, signer}

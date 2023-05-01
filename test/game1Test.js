@@ -16,6 +16,7 @@ describe('Game1', function () {
     // you must call unlock before you can win
 
     // leave this call to game.win() as-is
+    //this is used to Umlock or resstart the winning function for starting an win functio 
     await game.unlock();
     await game.win();
 

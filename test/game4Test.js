@@ -11,6 +11,7 @@ describe('Game4', function () {
   it('should be a winner', async function () {
     const { game } = await loadFixture(deployContractAndSetVariables);
 
+    //Signer for get the ethers or signing purpose
     const signer = ethers.provider.getSigner(0);
     const address = await signer.getAddress();
     // nested mappings are rough :}
